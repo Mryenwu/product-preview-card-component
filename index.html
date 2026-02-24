@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-color: #f2eae2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .product-card {
+        display: flex;
+        background-color: white;
+        width: 600px;
+        height: 456px;
+        border: 1px solid #000;
+        border-radius: 8px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+      }
+      .pic {
+        width: 50%;
+      }
+      .pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .word-card {
+        flex-direction: column;
+        padding: 32px;
+        width: 50%;
+        gap: 32px;
+        display: flex;
+        box-sizing: border-box;
+      }
+      .content-card {
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+      }
+      .type {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        color: #6c7289;
+        font-size: 12px;
+        line-height: 1.2;
+        letter-spacing: 5px;
+      }
+      .product-name {
+        font-family: "Fraunces", serif;
+        font-weight: bold;
+        font-size: 32px;
+        letter-spacing: 0px;
+        line-height: 1;
+      }
+      .product-content {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        letter-spacing: 0px;
+        color: #6c7289;
+      }
+      .price {
+        gap: 16px;
+        display: flex;
+      }
+      .after-price {
+        font-family: "Fraunces", serif;
+        font-size: 32px;
+        font-weight: bold;
+        color: #3d8168;
+      }
+      .before-price {
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        color: #6c7289;
+        display: flex;
+        text-decoration: line-through;
+        justify-content: center;
+        align-items: center;
+      }
+      .car {
+        flex-shrink: 0;
+        background-color: #3d8168;
+        width: 100%;
+        height: 50px;
+        border-radius: 8px;
+        padding: 16px 32px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+      }
+      .car:hover {
+        background-color: #1a4032;
+      }
+      .car-pic {
+        width: 18px;
+        height: 18px;
+      }
+      .car-pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .car-word {
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        color: white;
+        line-height: 1.1;
+        letter-spacing: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product-card">
+      <div class="pic">
+        <img src="images/image-product-desktop.jpg" alt="parfum" />
+      </div>
+      <div class="word-card">
+        <div class="content-card">
+          <div class="type">PERFUME</div>
+          <div class="product-name">Gabrielle Essence Eau <br />De Parfum</div>
+          <div class="product-content">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </div>
+        </div>
+        <div class="price">
+          <div class="after-price">$149.99</div>
+          <div class="before-price">$169.99</div>
+        </div>
+        <div class="car">
+          <div class="car-pic">
+            <img src="images/icon-cart.svg" alt="car-pic" />
+          </div>
+          <div class="car-word">Add to Cart</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
